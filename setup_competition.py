@@ -83,9 +83,9 @@ def copy_interfaces():
                 print(f"Copied {src_file} to {dst_file}")
 
 def copy_documentation():
-    """Copy README.md and ALGORITHM.md to each AI competitor directory."""
+    """Copy README.md, ALGORITHM.md, and instructions_and_tips.md to each AI competitor directory."""
     for ai_dir in AI_DIRS:
-        for filename in ["README.md", "ALGORITHM.md"]:
+        for filename in ["README.md", "ALGORITHM.md", "instructions_and_tips.md"]:
             if os.path.exists(filename):
                 dst_file = os.path.join(ai_dir, filename)
                 shutil.copy2(filename, dst_file)
@@ -107,3 +107,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

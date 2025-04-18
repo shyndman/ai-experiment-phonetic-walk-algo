@@ -1,3 +1,4 @@
+
 """
 The Sync Showdown Interface Definition
 
@@ -211,167 +212,34 @@ class AlignmentConfig:
         return cls(**data)
 
 
-class AlignmentInterface:
+def align_subtitles(
+    subtitles1: List[Dict[str, Any]],
+    subtitles2: List[Dict[str, Any]],
+    config: Optional[AlignmentConfig] = None
+) -> AlignmentResult:
     """
-    Interface for The Sync Showdown component.
+    Align two sets of subtitles using the Phonetic Walk algorithm.
     
-    The Sync Showdown is responsible for:
-    1. Implementing the Phonetic Walk algorithm
-    2. Aligning two sets of subtitles based on phonetic similarity
-    3. Calculating the time offset between the two sets
-    4. Providing confidence scores and alignment paths
+    This is the main entry point for The Sync Showdown component.
+    The function should implement the complete Phonetic Walk algorithm including:
+    - Finding an initial anchor match
+    - Following the alignment path
+    - Handling signal smearing
+    - Calculating and validating the offset
+    - Generating confidence scores
+    
+    Args:
+        subtitles1: First set of normalized subtitle dictionaries
+        subtitles2: Second set of normalized subtitle dictionaries
+        config: Optional configuration parameters for the alignment algorithm
+        
+    Returns:
+        An AlignmentResult object containing the alignment results
+        
+    Raises:
+        ValueError: If the input data is invalid or insufficient
     """
-    
-    def __init__(self, config: Optional[AlignmentConfig] = None):
-        """
-        Initialize the alignment interface with optional configuration.
-        
-        Args:
-            config: Configuration parameters for the alignment algorithm
-        """
-        self.config = config or AlignmentConfig()
-    
-    def align_subtitles(
-        self,
-        subtitles1: List[Dict[str, Any]],
-        subtitles2: List[Dict[str, Any]]
-    ) -> AlignmentResult:
-        """
-        Align two sets of subtitles using the Phonetic Walk algorithm.
-        
-        This is the main entry point for The Sync Showdown component.
-        
-        Args:
-            subtitles1: First set of normalized subtitle dictionaries
-            subtitles2: Second set of normalized subtitle dictionaries
-            
-        Returns:
-            An AlignmentResult object containing the alignment results
-            
-        Raises:
-            ValueError: If the input data is invalid or insufficient
-        """
-        raise NotImplementedError("Subclasses must implement align_subtitles")
-    
-    def calculate_phonetic_similarity(
-        self,
-        phonemes1: List[str],
-        phonemes2: List[str],
-        speaker1: Optional[str] = None,
-        speaker2: Optional[str] = None
-    ) -> float:
-        """
-        Calculate the phonetic similarity between two phoneme sequences.
-        
-        Args:
-            phonemes1: First sequence of phonemes
-            phonemes2: Second sequence of phonemes
-            speaker1: Speaker identifier for the first sequence (optional)
-            speaker2: Speaker identifier for the second sequence (optional)
-            
-        Returns:
-            A normalized similarity score between 0.0 and 1.0
-        """
-        raise NotImplementedError("Subclasses must implement calculate_phonetic_similarity")
-    
-    def find_initial_anchor(
-        self,
-        subtitles1: List[Dict[str, Any]],
-        subtitles2: List[Dict[str, Any]]
-    ) -> Optional[Tuple[int, int, float]]:
-        """
-        Find the initial anchor match to establish a starting point.
-        
-        Args:
-            subtitles1: First set of normalized subtitle dictionaries
-            subtitles2: Second set of normalized subtitle dictionaries
-            
-        Returns:
-            A tuple (i, j, score) representing the indices of the best match and its score,
-            or None if no suitable anchor is found
-        """
-        raise NotImplementedError("Subclasses must implement find_initial_anchor")
-    
-    def follow_alignment_path(
-        self,
-        subtitles1: List[Dict[str, Any]],
-        subtitles2: List[Dict[str, Any]],
-        initial_anchor: Tuple[int, int, float]
-    ) -> List[Tuple[int, int]]:
-        """
-        Follow the alignment path starting from the initial anchor.
-        
-        Args:
-            subtitles1: First set of normalized subtitle dictionaries
-            subtitles2: Second set of normalized subtitle dictionaries
-            initial_anchor: Tuple (i, j, score) representing the initial anchor match
-            
-        Returns:
-            A list of (i, j) pairs representing the alignment path
-        """
-        raise NotImplementedError("Subclasses must implement follow_alignment_path")
-    
-    def detect_smearing(
-        self,
-        subtitles1: List[Dict[str, Any]],
-        subtitles2: List[Dict[str, Any]],
-        i: int,
-        j: int
-    ) -> Optional[Tuple[int, List[int], float]]:
-        """
-        Detect and handle signal smearing between subtitle entries.
-        
-        Args:
-            subtitles1: First set of normalized subtitle dictionaries
-            subtitles2: Second set of normalized subtitle dictionaries
-            i: Index in subtitles1
-            j: Index in subtitles2
-            
-        Returns:
-            A tuple (i, [j1, j2, ...], score) representing a smeared match,
-            or None if no smearing is detected
-        """
-        raise NotImplementedError("Subclasses must implement detect_smearing")
-    
-    def calculate_offset(self, path: List[Tuple[int, int]], subtitles1: List[Dict[str, Any]], subtitles2: List[Dict[str, Any]]) -> Tuple[float, float, float]:
-        """
-        Calculate the median offset and its consistency from the alignment path.
-        
-        Args:
-            path: List of (i, j) pairs representing the alignment path
-            subtitles1: First set of normalized subtitle dictionaries
-            subtitles2: Second set of normalized subtitle dictionaries
-            
-        Returns:
-            A tuple (median_offset, standard_deviation, confidence_score)
-        """
-        raise NotImplementedError("Subclasses must implement calculate_offset")
-    
-    def validate_path(self, path: List[Tuple[int, int]], offset_sd: float) -> bool:
-        """
-        Validate that the alignment path meets the requirements.
-        
-        Args:
-            path: List of (i, j) pairs representing the alignment path
-            offset_sd: Standard deviation of the offsets along the path
-            
-        Returns:
-            True if the path is valid, False otherwise
-        """
-        raise NotImplementedError("Subclasses must implement validate_path")
-    
-    def calculate_confidence_score(self, path: List[Tuple[int, int]], offset_sd: float) -> float:
-        """
-        Calculate a confidence score for the alignment.
-        
-        Args:
-            path: List of (i, j) pairs representing the alignment path
-            offset_sd: Standard deviation of the offsets along the path
-            
-        Returns:
-            A confidence score between 0.0 and 1.0
-        """
-        raise NotImplementedError("Subclasses must implement calculate_confidence_score")
+    raise NotImplementedError("Implement align_subtitles to align two sets of subtitles")
 
 
 def apply_offset(subtitles: List[Dict[str, Any]], offset_seconds: float) -> List[Dict[str, Any]]:
@@ -392,3 +260,4 @@ def apply_offset(subtitles: List[Dict[str, Any]], offset_seconds: float) -> List
         adjusted['end'] = subtitle['end'] + offset_seconds
         result.append(adjusted)
     return result
+
