@@ -1,0 +1,354 @@
+{
+  "transcription": [
+    {
+      "caption": "I see you're drinking one-percent.",
+      "duration": 2052,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:20:12:930"
+    },
+    {
+      "caption": "Is that 'cause you think you're fat?",
+      "duration": 2247,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:20:14:982"
+    },
+    {
+      "caption": "'Cause you're not.",
+      "duration": 1378,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:20:18:548"
+    },
+    {
+      "caption": "You could be drinking whole if you wanted to.",
+      "duration": 2318,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:20:19:926"
+    },
+    {
+      "caption": "Well, I have all your equipment in my locker.",
+      "duration": 3935,
+      "speakerCertainty": 1.0,
+      "speakerName": "Deb",
+      "startTime": "00:20:23:429"
+    },
+    {
+      "caption": "You should probably come get it 'cause I can't fit my nunchakus in there anymore.",
+      "duration": 4231,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:20:27:465"
+    },
+    {
+      "caption": "Where's your locker?",
+      "duration": 1968,
+      "speakerCertainty": 1.0,
+      "speakerName": "Deb",
+      "startTime": "00:20:33:548"
+    },
+    {
+      "caption": "Hey, can I have one of your key chains?",
+      "duration": 2476,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:20:44:212"
+    },
+    {
+      "caption": "Hello?",
+      "duration": 1065,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:21:40:791"
+    },
+    {
+      "caption": "Napoleon, give me some of your Tots.",
+      "duration": 1694,
+      "speakerCertainty": 0.0,
+      "speakerName": "!!UNKNOWN!!",
+      "startTime": "00:22:10:061"
+    },
+    {
+      "caption": "No, go find your own.",
+      "duration": 1498,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:22:11:779"
+    },
+    {
+      "caption": "Come on.",
+      "duration": 664,
+      "speakerCertainty": 0.0,
+      "speakerName": "!!UNKNOWN!!",
+      "startTime": "00:22:13:277"
+    },
+    {
+      "caption": "Give me some of your Tots.",
+      "duration": 1276,
+      "speakerCertainty": 0.0,
+      "speakerName": "!!UNKNOWN!!",
+      "startTime": "00:22:13:301"
+    },
+    {
+      "caption": "No.",
+      "duration": 490,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:22:14:687"
+    },
+    {
+      "caption": "I'm freakin' starved.",
+      "duration": 1626,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:22:15:177"
+    },
+    {
+      "caption": "I didn't get to eat anything today.",
+      "duration": 1268,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:22:16:513"
+    },
+    {
+      "caption": "G...",
+      "duration": 2490,
+      "speakerCertainty": 0.0,
+      "speakerName": "!!UNKNOWN!!",
+      "startTime": "00:22:17:891"
+    },
+    {
+      "caption": "Gross.",
+      "duration": 1736,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:22:21:156"
+    },
+    {
+      "caption": "Freakin' idiot!",
+      "duration": 3059,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:22:23:065"
+    },
+    {
+      "caption": "Tina, come get some ham.",
+      "duration": 2764,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:22:32:269"
+    },
+    {
+      "caption": "What are you doing here, Uncle Rico?",
+      "duration": 2195,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:23:02:727"
+    },
+    {
+      "caption": "Your grandma took a little spill at the sand dunes today, broke her coccyx.",
+      "duration": 4120,
+      "speakerCertainty": 1.0,
+      "speakerName": "Rico",
+      "startTime": "00:23:05:030"
+    },
+    {
+      "caption": "What?",
+      "duration": 614,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:23:09:221"
+    },
+    {
+      "caption": "Since when does she go to the dunes?",
+      "duration": 2287,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:23:09:835"
+    },
+    {
+      "caption": "Looks like there's a lot you don't know about her.",
+      "duration": 2467,
+      "speakerCertainty": 1.0,
+      "speakerName": "Rico",
+      "startTime": "00:23:18:211"
+    },
+    {
+      "caption": "So, when's Grandma coming back?",
+      "duration": 1601,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:23:33:887"
+    },
+    {
+      "caption": "I don't know.",
+      "duration": 914,
+      "speakerCertainty": 1.0,
+      "speakerName": "Rico",
+      "startTime": "00:23:35:488"
+    },
+    {
+      "caption": "Not sure.",
+      "duration": 1524,
+      "speakerCertainty": 1.0,
+      "speakerName": "Rico",
+      "startTime": "00:23:36:472"
+    },
+    {
+      "caption": "You don't have to stay here with us.",
+      "duration": 1940,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:23:38:058"
+    },
+    {
+      "caption": "We're not babies.",
+      "duration": 810,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:23:39:998"
+    },
+    {
+      "caption": "Talk to your Auntie Caroline.",
+      "duration": 1926,
+      "speakerCertainty": 1.0,
+      "speakerName": "Rico",
+      "startTime": "00:23:41:801"
+    },
+    {
+      "caption": "Well, Kip is, like, 32 years old.",
+      "duration": 2696,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:23:44:647"
+    },
+    {
+      "caption": "I don't mind if you stay.",
+      "duration": 1612,
+      "speakerCertainty": 1.0,
+      "speakerName": "Kip",
+      "startTime": "00:23:47:497"
+    },
+    {
+      "caption": "Thanks, Kip.",
+      "duration": 1711,
+      "speakerCertainty": 1.0,
+      "speakerName": "Rico",
+      "startTime": "00:23:50:577"
+    },
+    {
+      "caption": "What the flip was Grandma doin' at the sand dunes?",
+      "duration": 3726,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:23:52:311"
+    },
+    {
+      "caption": "She was on a date...",
+      "duration": 1984,
+      "speakerCertainty": 1.0,
+      "speakerName": "Rico",
+      "startTime": "00:23:56:151"
+    },
+    {
+      "caption": "with her boyfriend.",
+      "duration": 1543,
+      "speakerCertainty": 1.0,
+      "speakerName": "Rico",
+      "startTime": "00:23:58:135"
+    },
+    {
+      "caption": "Boyfriend?",
+      "duration": 2160,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:23:59:725"
+    },
+    {
+      "caption": "Hey, you guys want to see my video?",
+      "duration": 2935,
+      "speakerCertainty": 1.0,
+      "speakerName": "Rico",
+      "startTime": "00:24:02:589"
+    },
+    {
+      "caption": "So, what do you think?",
+      "duration": 2991,
+      "speakerCertainty": 1.0,
+      "speakerName": "Rico",
+      "startTime": "00:24:28:824"
+    },
+    {
+      "caption": "It's pretty cool, I guess.",
+      "duration": 1800,
+      "speakerCertainty": 1.0,
+      "speakerName": "Kip",
+      "startTime": "00:24:32:066"
+    },
+    {
+      "caption": "Oh.",
+      "duration": 1036,
+      "speakerCertainty": 1.0,
+      "speakerName": "Rico",
+      "startTime": "00:24:33:866"
+    },
+    {
+      "caption": "Man, I wish I could go back in time.",
+      "duration": 2194,
+      "speakerCertainty": 1.0,
+      "speakerName": "Rico",
+      "startTime": "00:24:34:924"
+    },
+    {
+      "caption": "I'd take state.",
+      "duration": 1738,
+      "speakerCertainty": 1.0,
+      "speakerName": "Rico",
+      "startTime": "00:24:37:440"
+    },
+    {
+      "caption": "This is pretty much the worst video ever made.",
+      "duration": 2634,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:24:39:275"
+    },
+    {
+      "caption": "Napoleon, like anyone can even know that.",
+      "duration": 2959,
+      "speakerCertainty": 1.0,
+      "speakerName": "Kip",
+      "startTime": "00:24:41:934"
+    },
+    {
+      "caption": "You know what, Napoleon?",
+      "duration": 1608,
+      "speakerCertainty": 1.0,
+      "speakerName": "Rico",
+      "startTime": "00:24:45:330"
+    },
+    {
+      "caption": "You can leave.",
+      "duration": 1376,
+      "speakerCertainty": 1.0,
+      "speakerName": "Rico",
+      "startTime": "00:24:46:938"
+    },
+    {
+      "caption": "You guys are retarded.",
+      "duration": 1967,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "startTime": "00:24:48:331"
+    },
+    {
+      "caption": "Hey, check that out.",
+      "duration": 1654,
+      "speakerCertainty": 1.0,
+      "speakerName": "Kip",
+      "startTime": "00:24:52:684"
+    }
+  ]
+}

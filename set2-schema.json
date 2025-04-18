@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SRT to JSON Conversion",
+  "description": "The prompt will provide an SRT along with supporting materials to perform the task",
+  "type": "object",
+  "required": [
+    "transcription"
+  ],
+  "properties": {
+    "transcription": {
+      "type": "array",
+      "description": "An array of captions, each representing an utterance by a single speaker. Not lyrics, not sounds. Just speech.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "caption",
+          "startTime",
+          "duration",
+          "speakerName",
+          "speakerCertainty"
+        ],
+        "properties": {
+          "caption": {
+            "type": "string",
+            "description": "The transcribed text segment"
+          },
+          "startTime": {
+            "type": "string",
+            "description": "The time (mm:ss:fff, as measured from the beginning of the audio file) that where the transcribed text begins to be spoken."
+          },
+          "duration": {
+            "type": "integer",
+            "description": "Length of the entire segment in milliseconds",
+            "minimum": 0
+          },
+          "speakerName": {
+            "type": "string",
+            "description": "The name of the speaker, as determined by analyzing the supporting texts supplied in the request. Label the speaker '!!UNKNOWN!!' (exclamations indicate that this value is special and should not be used around all names) if you are below 50% confident."
+          },
+          "speakerCertainty": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Your certainty that your identification of the speaker is correct. 0 is that you have no idea, complete guess, 1 is 100% not a mistake, no way"
+          }
+        }
+      }
+    }
+  }
+}

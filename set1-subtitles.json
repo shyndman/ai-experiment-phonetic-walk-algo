@@ -1,0 +1,739 @@
+{
+  "transcription": [
+    {
+      "caption": "I see you're drinking 1%.",
+      "duration": 1097,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "00:13:147",
+        "00:13:267",
+        "00:13:467",
+        "00:13:657",
+        "00:13:897",
+        "00:14:244"
+      ]
+    },
+    {
+      "caption": "Is that 'cause you think you're fat?",
+      "duration": 1860,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "00:14:614",
+        "00:14:774",
+        "00:14:894",
+        "00:15:214",
+        "00:15:344",
+        "00:15:564",
+        "00:15:824",
+        "00:16:474"
+      ]
+    },
+    {
+      "caption": "'Cause you're not.",
+      "duration": 1420,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "00:18:594",
+        "00:18:874",
+        "00:19:134",
+        "00:20:014"
+      ]
+    },
+    {
+      "caption": "You could be drinking whole if you wanted to.",
+      "duration": 2200,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "00:20:014",
+        "00:20:174",
+        "00:20:324",
+        "00:20:504",
+        "00:20:784",
+        "00:21:054",
+        "00:21:204",
+        "00:21:474",
+        "00:21:704",
+        "00:22:214"
+      ]
+    },
+    {
+      "caption": "Well,",
+      "duration": 470,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "00:24:424"
+      ]
+    },
+    {
+      "caption": "I have all your equipment in my locker.",
+      "duration": 2290,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "00:24:894",
+        "00:25:104",
+        "00:25:284",
+        "00:25:484",
+        "00:25:734",
+        "00:26:024",
+        "00:26:244",
+        "00:26:574",
+        "00:27:184"
+      ]
+    },
+    {
+      "caption": "You should probably come get it 'cause I can't fit my numchucks in there anymore.",
+      "duration": 4180,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "00:27:674",
+        "00:27:854",
+        "00:28:144",
+        "00:28:374",
+        "00:28:604",
+        "00:28:764",
+        "00:28:984",
+        "00:29:114",
+        "00:29:404",
+        "00:29:614",
+        "00:29:964",
+        "00:30:254",
+        "00:30:824",
+        "00:30:974",
+        "00:31:294",
+        "00:31:854"
+      ]
+    },
+    {
+      "caption": "Where's their locker?",
+      "duration": 1420,
+      "speakerCertainty": 0.9,
+      "speakerName": "Deb",
+      "wordStartTimes": [
+        "00:33:414",
+        "00:33:844",
+        "00:34:834"
+      ]
+    },
+    {
+      "caption": "Hey,",
+      "duration": 231,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "00:44:339"
+      ]
+    },
+    {
+      "caption": "can I have one of your key chains?",
+      "duration": 1720,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "00:44:709",
+        "00:44:819",
+        "00:44:969",
+        "00:45:159",
+        "00:45:389",
+        "00:45:589",
+        "00:45:909",
+        "00:46:429"
+      ]
+    },
+    {
+      "caption": "Hello.",
+      "duration": 833,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "01:40:890",
+        "01:41:723"
+      ]
+    },
+    {
+      "caption": "Polling, give me some of your tots.",
+      "duration": 1490,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "02:10:167",
+        "02:10:537",
+        "02:10:727",
+        "02:10:917",
+        "02:11:107",
+        "02:11:307",
+        "02:11:657"
+      ]
+    },
+    {
+      "caption": "No, go find your own.",
+      "duration": 1110,
+      "speakerCertainty": 1.0,
+      "speakerName": "Kip",
+      "wordStartTimes": [
+        "02:12:57",
+        "02:12:257",
+        "02:12:487",
+        "02:12:697",
+        "02:12:917",
+        "02:13:167"
+      ]
+    },
+    {
+      "caption": "Come on, give me some of your tots.",
+      "duration": 1320,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "02:13:287",
+        "02:13:507",
+        "02:13:747",
+        "02:13:937",
+        "02:14:127",
+        "02:14:317",
+        "02:14:607"
+      ]
+    },
+    {
+      "caption": "No, I'm freaking starving.",
+      "duration": 1220,
+      "speakerCertainty": 1.0,
+      "speakerName": "Kip",
+      "wordStartTimes": [
+        "02:14:817",
+        "02:15:107",
+        "02:15:367",
+        "02:15:807",
+        "02:16:037"
+      ]
+    },
+    {
+      "caption": "I didn't get to eat anything today.",
+      "duration": 1210,
+      "speakerCertainty": 1.0,
+      "speakerName": "Kip",
+      "wordStartTimes": [
+        "02:16:037",
+        "02:16:177",
+        "02:16:377",
+        "02:16:537",
+        "02:16:757",
+        "02:17:007",
+        "02:17:247"
+      ]
+    },
+    {
+      "caption": "God.",
+      "duration": 620,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "02:19:787",
+        "02:20:407"
+      ]
+    },
+    {
+      "caption": "Gross.",
+      "duration": 1310,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "02:21:287",
+        "02:22:597"
+      ]
+    },
+    {
+      "caption": "Freaking idiot.",
+      "duration": 1380,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "02:23:207",
+        "02:23:917",
+        "02:24:587"
+      ]
+    },
+    {
+      "caption": "Tina, come get some ham.",
+      "duration": 1577,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "02:33:447",
+        "02:34:47",
+        "02:34:297",
+        "02:34:547",
+        "02:34:847",
+        "02:35:024"
+      ]
+    },
+    {
+      "caption": "What are you doing here, Uncle Rico?",
+      "duration": 1807,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "03:02:716",
+        "03:02:916",
+        "03:03:056",
+        "03:03:266",
+        "03:03:606",
+        "03:03:886",
+        "03:04:146",
+        "03:04:523"
+      ]
+    },
+    {
+      "caption": "Grandma took a little spill at the sand dunes today.",
+      "duration": 2620,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "03:05:23",
+        "03:05:483",
+        "03:05:673",
+        "03:05:813",
+        "03:05:973",
+        "03:06:283",
+        "03:06:413",
+        "03:06:593",
+        "03:06:783",
+        "03:07:123",
+        "03:07:643"
+      ]
+    },
+    {
+      "caption": "Broke her cock.",
+      "duration": 1030,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "03:07:943",
+        "03:08:183",
+        "03:08:563",
+        "03:08:973"
+      ]
+    },
+    {
+      "caption": "What?",
+      "duration": 400,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "03:09:513",
+        "03:09:913"
+      ]
+    },
+    {
+      "caption": "Since when does she go to the dunes?",
+      "duration": 1610,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "03:10:223",
+        "03:10:443",
+        "03:10:653",
+        "03:10:843",
+        "03:10:983",
+        "03:11:143",
+        "03:11:303",
+        "03:11:543",
+        "03:11:833"
+      ]
+    },
+    {
+      "caption": "Looks like there's a lot you don't know about.",
+      "duration": 2040,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "03:18:133",
+        "03:18:333",
+        "03:18:633",
+        "03:18:803",
+        "03:18:943",
+        "03:19:223",
+        "03:19:413",
+        "03:19:653",
+        "03:19:853",
+        "03:20:173"
+      ]
+    },
+    {
+      "caption": "So when's Grandma coming back?",
+      "duration": 1505,
+      "speakerCertainty": 1.0,
+      "speakerName": "Kip",
+      "wordStartTimes": [
+        "03:33:921",
+        "03:34:281",
+        "03:34:591",
+        "03:34:881",
+        "03:35:131",
+        "03:35:426"
+      ]
+    },
+    {
+      "caption": "I don't know.",
+      "duration": 649,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "03:36:16",
+        "03:36:316",
+        "03:36:416",
+        "03:36:665"
+      ]
+    },
+    {
+      "caption": "Not sure.",
+      "duration": 499,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "03:36:845",
+        "03:37:165",
+        "03:37:344"
+      ]
+    },
+    {
+      "caption": "You don't have to stay here with us.",
+      "duration": 1449,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "03:38:84",
+        "03:38:264",
+        "03:38:444",
+        "03:38:654",
+        "03:38:884",
+        "03:39:114",
+        "03:39:304",
+        "03:39:533"
+      ]
+    },
+    {
+      "caption": "We're not babies.",
+      "duration": 630,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "03:39:673",
+        "03:39:873",
+        "03:40:303"
+      ]
+    },
+    {
+      "caption": "Talk to your Annie Carlin.",
+      "duration": 1750,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "03:41:783",
+        "03:42:183",
+        "03:42:373",
+        "03:42:563",
+        "03:42:863",
+        "03:43:533"
+      ]
+    },
+    {
+      "caption": "Well, Kip is like 32 years old.",
+      "duration": 2180,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "03:44:663",
+        "03:45:233",
+        "03:45:483",
+        "03:45:723",
+        "03:46:43",
+        "03:46:313",
+        "03:46:553",
+        "03:46:843"
+      ]
+    },
+    {
+      "caption": "I don't mind if you stay.",
+      "duration": 1460,
+      "speakerCertainty": 1.0,
+      "speakerName": "Kip",
+      "wordStartTimes": [
+        "03:47:533",
+        "03:47:773",
+        "03:48:33",
+        "03:48:263",
+        "03:48:483",
+        "03:48:743",
+        "03:48:993"
+      ]
+    },
+    {
+      "caption": "Thanks Kip.",
+      "duration": 1470,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "03:50:513",
+        "03:51:113",
+        "03:51:983"
+      ]
+    },
+    {
+      "caption": "What the flip was Grandma doing at the sand dunes?",
+      "duration": 2370,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "03:52:413",
+        "03:52:633",
+        "03:52:853",
+        "03:53:143",
+        "03:53:393",
+        "03:53:643",
+        "03:53:933",
+        "03:54:173",
+        "03:54:363",
+        "03:54:783"
+      ]
+    },
+    {
+      "caption": "She was on a date",
+      "duration": 1000,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "03:56:133",
+        "03:56:303",
+        "03:56:513",
+        "03:56:693",
+        "03:56:953",
+        "03:57:133"
+      ]
+    },
+    {
+      "caption": "with a boyfriend.",
+      "duration": 1040,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "03:57:473",
+        "03:57:773",
+        "03:58:173",
+        "03:58:513"
+      ]
+    },
+    {
+      "caption": "boyfriend?",
+      "duration": 1100,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "03:59:923",
+        "04:01:023"
+      ]
+    },
+    {
+      "caption": "Hey,",
+      "duration": 289,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "04:02:682",
+        "04:02:971"
+      ]
+    },
+    {
+      "caption": "You guys want to see my video?",
+      "duration": 1400,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "04:03:591",
+        "04:03:801",
+        "04:03:981",
+        "04:04:161",
+        "04:04:311",
+        "04:04:551",
+        "04:04:991"
+      ]
+    },
+    {
+      "caption": "Yeah.",
+      "duration": 100,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "04:28:876"
+      ]
+    },
+    {
+      "caption": "So, what do you think?",
+      "duration": 1420,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "04:30:86",
+        "04:30:376",
+        "04:30:556",
+        "04:30:716",
+        "04:31:206",
+        "04:31:506"
+      ]
+    },
+    {
+      "caption": "It's pretty cool, I guess.",
+      "duration": 1660,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "04:31:996",
+        "04:32:356",
+        "04:32:646",
+        "04:32:786",
+        "04:33:276",
+        "04:33:656"
+      ]
+    },
+    {
+      "caption": "Man,",
+      "duration": 670,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "04:34:876",
+        "04:35:546"
+      ]
+    },
+    {
+      "caption": "I wish I could go back in time.",
+      "duration": 1310,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "04:35:546",
+        "04:35:726",
+        "04:35:816",
+        "04:35:966",
+        "04:36:176",
+        "04:36:356",
+        "04:36:566",
+        "04:36:856"
+      ]
+    },
+    {
+      "caption": "I'd take state.",
+      "duration": 1250,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "04:37:696",
+        "04:38:16",
+        "04:38:546",
+        "04:38:946"
+      ]
+    },
+    {
+      "caption": "This is pretty much the worst video ever made.",
+      "duration": 2720,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "04:39:316",
+        "04:39:496",
+        "04:39:766",
+        "04:39:966",
+        "04:40:196",
+        "04:40:456",
+        "04:40:746",
+        "04:40:926",
+        "04:41:256",
+        "04:41:696",
+        "04:42:036"
+      ]
+    },
+    {
+      "caption": "Napoleon, like anyone can even know that.",
+      "duration": 2290,
+      "speakerCertainty": 1.0,
+      "speakerName": "Kip",
+      "wordStartTimes": [
+        "04:42:366",
+        "04:42:956",
+        "04:43:146",
+        "04:43:446",
+        "04:43:666",
+        "04:43:846",
+        "04:44:116",
+        "04:44:366",
+        "04:44:656"
+      ]
+    },
+    {
+      "caption": "You know what, Napoleon?",
+      "duration": 1200,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "04:45:536",
+        "04:45:716",
+        "04:45:906",
+        "04:46:146",
+        "04:46:466",
+        "04:46:736"
+      ]
+    },
+    {
+      "caption": "You can leave.",
+      "duration": 780,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "04:47:166",
+        "04:47:346",
+        "04:47:706",
+        "04:47:946"
+      ]
+    },
+    {
+      "caption": "You guys are retarded.",
+      "duration": 1340,
+      "speakerCertainty": 1.0,
+      "speakerName": "Napoleon",
+      "wordStartTimes": [
+        "04:48:256",
+        "04:48:526",
+        "04:48:736",
+        "04:49:246",
+        "04:49:596"
+      ]
+    },
+    {
+      "caption": "Huh.",
+      "duration": 240,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "04:51:116"
+      ]
+    },
+    {
+      "caption": "Hey, check that out.",
+      "duration": 1240,
+      "speakerCertainty": 1.0,
+      "speakerName": "Uncle Rico",
+      "wordStartTimes": [
+        "04:52:616",
+        "04:53:16",
+        "04:53:416",
+        "04:53:856"
+      ]
+    }
+  ]
+}

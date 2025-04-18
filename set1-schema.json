@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Audio Transcription",
+  "description": "The word-for-word timestamped transcription of an audio segment from a movie or TV show",
+  "type": "object",
+  "required": ["transcription"],
+  "properties": {
+    "transcription": {
+      "type": "array",
+      "description": "An array of captions representing the dialog of individuals heard in the provided audio clip",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "caption",
+          "wordStartTimes",
+          "duration",
+          "speakerName",
+          "speakerCertainty"
+        ],
+        "properties": {
+          "caption": {
+            "type": "string",
+            "description": "The transcribed text segment"
+          },
+          "wordStartTimes": {
+            "type": "array",  "items": {
+              "type": "string"
+            },
+            "description": "The time (as measured from the beginning of the audio file) that the sound of each word in the caption was first heard, in mm:ss:mmm format. Ensure this has exactly the same number of elements as caption has words."
+          },
+          "duration": {
+            "type": "integer",
+            "description": "Length of the entire segment in milliseconds",
+            "minimum": 0
+          },
+          "speakerName": {
+            "type": "string",
+            "description": "The name of the speaker, as determined by analyzing the supporting texts supplied in the request. Label the speaker '@UNKNOWN' if you are not sure. "
+          },
+          "speakerCertainty": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Your certainty that your identification of the speaker is correct. 0 is not sure, 1 is 100% not a mistake, no way"
+          }
+        }
+      }
+    }
+  }
+}
