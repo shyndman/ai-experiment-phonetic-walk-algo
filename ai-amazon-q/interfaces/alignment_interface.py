@@ -7,7 +7,7 @@ subtitle alignment competition. The Sync Showdown is responsible for
 implementing the Phonetic Walk algorithm to align two sets of subtitles.
 """
 
-from typing import List, Dict, Any, Optional, Union, Tuple
+from typing import list, dict, Any, Optional, Union, tuple
 import json
 from pathlib import Path
 
@@ -16,18 +16,18 @@ class AlignmentResult:
     """
     Class representing the result of an alignment operation.
     """
-    
+
     def __init__(
         self,
         status: str,
-        offset_seconds: Optional[float] = None,
-        confidence: Optional[float] = None,
-        alignment_path: Optional[List[Tuple[int, int]]] = None,
-        reason: Optional[str] = None
+        offset_seconds: float | None = None,
+        confidence: float | None = None,
+        alignment_path: Optional[list[tuple[int, int]]] = None,
+        reason: str | None = None
     ):
         """
         Initialize an AlignmentResult.
-        
+
         Args:
             status: 'success' or 'failure'
             offset_seconds: The calculated time offset in seconds (if successful)
@@ -40,25 +40,25 @@ class AlignmentResult:
         self.confidence = confidence
         self.alignment_path = alignment_path
         self.reason = reason
-    
+
     def is_success(self) -> bool:
         """
         Check if the alignment was successful.
-        
+
         Returns:
             True if the alignment was successful, False otherwise
         """
         return self.status == 'success'
-    
-    def to_dict(self) -> Dict[str, Any]:
+
+    def to_dict(self) -> dict[str, Any]:
         """
         Convert the result to a dictionary.
-        
+
         Returns:
             A dictionary representation of the alignment result
         """
         result = {'status': self.status}
-        
+
         if self.is_success():
             result.update({
                 'offset_seconds': self.offset_seconds,
@@ -69,17 +69,17 @@ class AlignmentResult:
         else:
             result['reason'] = self.reason
             result['offset_seconds'] = None
-        
+
         return result
-    
+
     @classmethod
-    def from_dict(cls, data: Dict[str, Any]) -> 'AlignmentResult':
+    def from_dict(cls, data: dict[str, Any]) -> 'AlignmentResult':
         """
         Create an AlignmentResult from a dictionary.
-        
+
         Args:
-            data: Dictionary containing alignment result data
-            
+            data: dictionary containing alignment result data
+
         Returns:
             An AlignmentResult instance
         """
@@ -95,22 +95,22 @@ class AlignmentResult:
                 status='failure',
                 reason=data.get('reason')
             )
-    
+
     @classmethod
     def success(
         cls,
         offset_seconds: float,
         confidence: float,
-        alignment_path: Optional[List[Tuple[int, int]]] = None
+        alignment_path: Optional[list[tuple[int, int]]] = None
     ) -> 'AlignmentResult':
         """
         Create a successful alignment result.
-        
+
         Args:
             offset_seconds: The calculated time offset in seconds
             confidence: A confidence score between 0.0 and 1.0
             alignment_path: The alignment path as a list of (i, j) index pairs
-            
+
         Returns:
             A successful AlignmentResult
         """
@@ -120,15 +120,15 @@ class AlignmentResult:
             confidence=confidence,
             alignment_path=alignment_path
         )
-    
+
     @classmethod
     def failure(cls, reason: str) -> 'AlignmentResult':
         """
         Create a failed alignment result.
-        
+
         Args:
             reason: The reason for failure
-            
+
         Returns:
             A failed AlignmentResult
         """
@@ -142,13 +142,13 @@ class AlignmentConfig:
     """
     Configuration parameters for the alignment algorithm.
     """
-    
+
     def __init__(
         self,
         phonetic_similarity_threshold: float = 0.7,
         smear_similarity_threshold: float = 0.5,
         initial_search_window_seconds: float = 120.0,
-        local_search_neighborhood: Dict[str, List[int]] = None,
+        local_search_neighborhood: dict[str, list[int]] = None,
         min_path_length: int = 5,
         max_consecutive_gaps: int = 2,
         gap_penalty: float = 0.1,
@@ -157,7 +157,7 @@ class AlignmentConfig:
     ):
         """
         Initialize alignment configuration parameters.
-        
+
         Args:
             phonetic_similarity_threshold: Minimum similarity score for direct matches
             smear_similarity_threshold: Minimum similarity score for smear matches
@@ -178,11 +178,11 @@ class AlignmentConfig:
         self.gap_penalty = gap_penalty
         self.speaker_mismatch_penalty = speaker_mismatch_penalty
         self.offset_consistency_threshold_sd = offset_consistency_threshold_sd
-    
-    def to_dict(self) -> Dict[str, Any]:
+
+    def to_dict(self) -> dict[str, Any]:
         """
         Convert the configuration to a dictionary.
-        
+
         Returns:
             A dictionary representation of the configuration
         """
@@ -197,15 +197,15 @@ class AlignmentConfig:
             'speaker_mismatch_penalty': self.speaker_mismatch_penalty,
             'offset_consistency_threshold_sd': self.offset_consistency_threshold_sd
         }
-    
+
     @classmethod
-    def from_dict(cls, data: Dict[str, Any]) -> 'AlignmentConfig':
+    def from_dict(cls, data: dict[str, Any]) -> 'AlignmentConfig':
         """
         Create an AlignmentConfig from a dictionary.
-        
+
         Args:
-            data: Dictionary containing configuration parameters
-            
+            data: dictionary containing configuration parameters
+
         Returns:
             An AlignmentConfig instance
         """
@@ -213,13 +213,13 @@ class AlignmentConfig:
 
 
 def align_subtitles(
-    subtitles1: List[Dict[str, Any]],
-    subtitles2: List[Dict[str, Any]],
-    config: Optional[AlignmentConfig] = None
+    subtitles1: list[dict[str, Any]],
+    subtitles2: list[dict[str, Any]],
+    config: AlignmentConfig | None = None
 ) -> AlignmentResult:
     """
     Align two sets of subtitles using the Phonetic Walk algorithm.
-    
+
     This is the main entry point for The Sync Showdown component.
     The function should implement the complete Phonetic Walk algorithm including:
     - Finding an initial anchor match
@@ -227,31 +227,31 @@ def align_subtitles(
     - Handling signal smearing
     - Calculating and validating the offset
     - Generating confidence scores
-    
+
     Args:
         subtitles1: First set of normalized subtitle dictionaries
         subtitles2: Second set of normalized subtitle dictionaries
         config: Optional configuration parameters for the alignment algorithm
-        
+
     Returns:
         An AlignmentResult object containing the alignment results
-        
+
     Raises:
         ValueError: If the input data is invalid or insufficient
     """
     raise NotImplementedError("Implement align_subtitles to align two sets of subtitles")
 
 
-def apply_offset(subtitles: List[Dict[str, Any]], offset_seconds: float) -> List[Dict[str, Any]]:
+def apply_offset(subtitles: list[dict[str, Any]], offset_seconds: float) -> list[dict[str, Any]]:
     """
     Apply a time offset to a set of subtitles.
-    
+
     Args:
-        subtitles: List of subtitle dictionaries
+        subtitles: list of subtitle dictionaries
         offset_seconds: Time offset to apply in seconds (positive or negative)
-        
+
     Returns:
-        List of subtitle dictionaries with adjusted timestamps
+        list of subtitle dictionaries with adjusted timestamps
     """
     result = []
     for subtitle in subtitles:
@@ -260,4 +260,3 @@ def apply_offset(subtitles: List[Dict[str, Any]], offset_seconds: float) -> List
         adjusted['end'] = subtitle['end'] + offset_seconds
         result.append(adjusted)
     return result
-

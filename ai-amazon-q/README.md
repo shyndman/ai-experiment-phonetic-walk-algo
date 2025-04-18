@@ -113,11 +113,12 @@ The test data includes:
 
 ## Participating LLMs
 
-- GPT-4
-- Claude 3
-- Gemini
-- Llama 3
-- [Add other LLMs as needed]
+- Amazon Q
+- Augment
+- Claude Code
+- Gemini 2.5 Pro (via Copilot)
+- Plandex Cheap
+- Plandex Strong
 
 ## Results Table
 
@@ -127,7 +128,7 @@ The test data includes:
 | [Gemini 2.5 Pro](https://aistudio.google.com/welcome)<br>_via CoPilot_ | | | | | | |
 | [Plandex v2](https://plandex.ai/)<br>__**Strong** model pack__ | | | | | | |
 | [Plandex v2](https://plandex.ai/)<br>__**Cheap** model pack__ | | | | | | |
-| [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview) | | | | | | |
+| [Augment](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview) | | | | | | |
 | ... | | | | | | |
 
 ## Getting Started

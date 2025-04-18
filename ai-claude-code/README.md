@@ -56,10 +56,10 @@ To ensure consistent evaluation, all implementations must conform to these minim
    def normalize_subtitles(caption):
        """
        Normalize a single subtitle caption.
-       
+
        Args:
            caption: A dictionary containing raw subtitle data
-           
+
        Returns:
            A normalized subtitle dictionary
        """
@@ -70,12 +70,12 @@ To ensure consistent evaluation, all implementations must conform to these minim
    def align_subtitles(subtitles1, subtitles2, config=None):
        """
        Align two sets of normalized subtitles.
-       
+
        Args:
            subtitles1: First set of normalized subtitles
            subtitles2: Second set of normalized subtitles
            config: Optional configuration parameters
-           
+
        Returns:
            An alignment result with offset and confidence
        """
@@ -162,11 +162,12 @@ The test data includes:
 
 ## Participating LLMs
 
-- GPT-4
-- Claude 3
-- Gemini
-- Llama 3
-- [Add other LLMs as needed]
+- Amazon Q
+- Augment
+- Claude Code
+- Gemini 2.5 Pro (via Copilot)
+- Plandex Cheap
+- Plandex Strong
 
 ## Results Table
 
@@ -176,7 +177,7 @@ The test data includes:
 | [Gemini 2.5 Pro](https://aistudio.google.com/welcome)<br>_via CoPilot_ | | | | | | |
 | [Plandex v2](https://plandex.ai/)<br>__**Strong** model pack__ | | | | | | |
 | [Plandex v2](https://plandex.ai/)<br>__**Cheap** model pack__ | | | | | | |
-| [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview) | | | | | | |
+| [Augment](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview) | | | | | | |
 | ... | | | | | | |
 
 ## Getting Started
