@@ -1,3 +1,4 @@
+
 # Subtitle Alignment Competition: Instructions and Tips
 
 ## Overview
@@ -76,13 +77,14 @@ def normalize_subtitles(caption):
     """
     pass
 
-def align_subtitles(subtitles1, subtitles2):
+def align_subtitles(subtitles1, subtitles2, config=None):
     """
     Align two sets of normalized subtitles.
     
     Args:
         subtitles1: First set of normalized subtitles
-        subtitles2: Second set of normalized subtitles
+        subtitles2: Second set of normalized subtitle
+        config: Optional configuration parameters
         
     Returns:
         An alignment result with offset and confidence
@@ -90,11 +92,41 @@ def align_subtitles(subtitles1, subtitles2):
     pass
 ```
 
-## Implementation Tips
+## Implementation Freedom
 
-### Handling Missing Data and Edge Cases
+**Important:** You have complete freedom in how you implement the solutions for both components. The only requirements are:
 
-When implementing the Phonetic Walking algorithm, you'll encounter various real-world challenges with subtitle data. Here's how to handle common edge cases:
+1. Your implementation must use the function signatures specified above
+2. Your implementation must return data in the expected format
+3. Your solution must handle the challenges described in the competition documentation
+
+Beyond these minimal requirements, you are free to:
+
+- Choose any algorithms, data structures, or approaches you prefer
+- Create any helper functions or utility modules as needed
+- Implement the solution in your own style and organization
+- Use any libraries or tools that are appropriate for the task
+
+There is no "correct" implementation approach. The competition is designed to evaluate your ability to solve the problem effectively, not to follow a specific implementation pattern.
+
+## Testing Your Implementation
+
+To test your implementation, we provide several challenge sets with different characteristics:
+
+1. **Basic Alignment** - Simple subtitles with consistent offset
+2. **Encoding Challenges** - Subtitles with various encoding issues and special characters
+3. **Varying Offset** - Subtitles where the offset changes gradually throughout the file
+4. **Missing Data** - Subtitles with missing fields and incomplete information
+
+Your solution will be evaluated on how well it handles each of these challenges, both individually and in combination.
+
+## Reference Implementation Suggestions
+
+The following sections contain optional implementation suggestions and tips. These are provided as a reference and are not required to follow. You are encouraged to develop your own approach based on your understanding of the problem.
+
+### Reference: Handling Missing Data and Edge Cases
+
+When implementing the Phonetic Walking algorithm, you'll encounter various real-world challenges with subtitle data. Here's how you might handle common edge cases:
 
 #### Missing Phonemes
 
@@ -140,7 +172,7 @@ When implementing the Phonetic Walking algorithm, you'll encounter various real-
     * Be prepared for lower similarity scores due to transcription differences
     * Consider treating overlapping segments as potential smearing candidates
 
-### Phonetic Similarity Calculation in Detail
+### Reference: Phonetic Similarity Calculation in Detail
 
 The phonetic similarity calculation is the core of the alignment algorithm. Here's a more detailed explanation:
 
@@ -196,7 +228,7 @@ For more accurate phonetic matching, consider these enhancements:
    * Adjust based on your specific subtitle data characteristics
    * Consider dynamic thresholds that adapt to the overall similarity distribution in your data
 
-### Signal Smearing Examples and Detection
+### Reference: Signal Smearing Examples and Detection
 
 Signal smearing occurs when content is split differently between the two subtitle sets. Here are common scenarios and detection strategies:
 
@@ -279,7 +311,7 @@ The algorithm would:
 4. Record a smeared match: (i, [j, j+1, j+2])
 5. Advance i by 1 and j by 3 in the path following
 
-### Handling Speaker Mismatches
+### Reference: Handling Speaker Mismatches
 
 Speaker information can significantly improve alignment accuracy when available. Here's how to effectively use and handle speaker information:
 
@@ -319,6 +351,8 @@ Speaker information can significantly improve alignment accuracy when available.
    * Start with a lower penalty and increase it as more consistent speaker mappings are established
    * ```dynamic_penalty = base_penalty * (1.0 - uncertainty_factor)```
 
+   * ```dynamic_penalty = base_penalty * (1.0 - uncertainty_factor)```
+
 #### Practical Implementation Guidelines
 
 1. **Default Settings:**
@@ -354,3 +388,4 @@ Your solution will be evaluated on how well it handles each of these challenges,
 Remember that the competition evaluates both your ability to clean messy data and implement a complex algorithm. The example input files showcase some typical issues, but in real usage, you could encounter more severe or different anomalies. Your solution should be flexible enough to handle unexpected data quirks.
 
 Good luck!
+

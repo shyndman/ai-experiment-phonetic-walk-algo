@@ -136,7 +136,7 @@ class AlignmentResult:
             status='failure',
             reason=reason
         )
-
+        
 
 class AlignmentConfig:
     """
@@ -210,7 +210,7 @@ class AlignmentConfig:
             An AlignmentConfig instance
         """
         return cls(**data)
-
+        
 
 def align_subtitles(
     subtitles1: List[Dict[str, Any]],
@@ -240,7 +240,7 @@ def align_subtitles(
         ValueError: If the input data is invalid or insufficient
     """
     raise NotImplementedError("Implement align_subtitles to align two sets of subtitles")
-
+        
 
 def apply_offset(subtitles: List[Dict[str, Any]], offset_seconds: float) -> List[Dict[str, Any]]:
     """
@@ -260,4 +260,3 @@ def apply_offset(subtitles: List[Dict[str, Any]], offset_seconds: float) -> List
         adjusted['end'] = subtitle['end'] + offset_seconds
         result.append(adjusted)
     return result
-

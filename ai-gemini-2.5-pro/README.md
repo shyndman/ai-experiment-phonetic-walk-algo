@@ -1,3 +1,4 @@
+
 # AI Experiment: Subtitle Alignment Competition
 
 ## Overview
@@ -23,16 +24,64 @@ The Freestyle Wrangler component focuses on data normalization and preprocessing
 - Random messages from release groups
 - Partial foreign language text
 
-Competitors have freedom to implement creative solutions for cleaning and normalizing the data, as long as the output conforms to the required interface for the alignment component.
+Competitors have complete freedom to implement their solution in any way they see fit. The only requirement is that they implement the `normalize_subtitles(caption)` function that takes a single subtitle caption and returns a normalized version.
 
 ### The Sync Showdown
 
 The Sync Showdown component implements the core Phonetic Walk algorithm for subtitle alignment. This algorithm time-shifts subtitles when they are not properly synchronized with their associated dialog. The implementation must:
 
-- Follow the detailed algorithm specification in ALGORITHM.md
+- Follow the algorithm specification in ALGORITHM.md
 - Handle edge cases appropriately
 - Produce consistent and accurate alignment results
-- Integrate seamlessly with the output from the Freestyle Wrangler component
+
+Competitors have complete freedom in how they implement the algorithm. The only requirement is that they implement the `align_subtitles(subtitles1, subtitles2, config=None)` function that takes two sets of normalized subtitles and returns an alignment result.
+
+### Implementation Freedom
+
+This competition is designed to evaluate how different AI models approach the same problem with minimal constraints. There is no "correct" implementation approach beyond the core algorithm description. Competitors are free to:
+
+- Choose any algorithms, data structures, or approaches they prefer
+- Create any helper functions or utility modules as needed
+- Implement the solution in their own style and organization
+- Use any libraries or tools that are appropriate for the task
+
+The focus is on solving the problem effectively, not following a specific implementation pattern.
+
+## Interface Requirements
+
+To ensure consistent evaluation, all implementations must conform to these minimal interfaces:
+
+1. **Freestyle Wrangler Interface**
+   ```python
+   def normalize_subtitles(caption):
+       """
+       Normalize a single subtitle caption.
+       
+       Args:
+           caption: A dictionary containing raw subtitle data
+           
+       Returns:
+           A normalized subtitle dictionary
+       """
+   ```
+
+2. **The Sync Showdown Interface**
+   ```python
+   def align_subtitles(subtitles1, subtitles2, config=None):
+       """
+       Align two sets of normalized subtitles.
+       
+       Args:
+           subtitles1: First set of normalized subtitles
+           subtitles2: Second set of normalized subtitles
+           config: Optional configuration parameters
+           
+       Returns:
+           An alignment result with offset and confidence
+       """
+   ```
+
+Beyond these minimal requirements, competitors have complete freedom in their implementation approach.
 
 ## Data Normalization Requirements
 

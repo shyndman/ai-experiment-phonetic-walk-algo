@@ -14,7 +14,6 @@ from pathlib import Path
 
 
 def normalize_subtitles(caption: Dict[str, Any]) -> Dict[str, Any]:
-class WranglerInterface:
     """
     Normalize a single subtitle caption.
     
